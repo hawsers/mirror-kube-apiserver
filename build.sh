@@ -53,6 +53,8 @@ for i in "${missing_tags[@]}"; do
             # MUST Push one by one
             git push -v -f origin ${i//\'}
             ((limitTrigger--))
+        else
+            break
         fi
     # fi
 done
